@@ -1,0 +1,50 @@
+.main_wrapper{
+    padding: 67px 0 0;
+    background: #EAEDF7;
+}
+.form{
+    background: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgb(34 38 69 / 5%);
+    margin: 0 0 20px;
+}
+
+.name_group label {
+    display: block !important;
+    padding: 5px 0;
+}
+.inputs{
+    display: flex;
+    position: relative;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.inputs input{
+    display: block !important;
+    background: #fff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+    min-height: 38px;
+    padding: 4px 15px;
+    border: 1px solid #0000004d;
+    color: #0a1c31;    
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 100%;
+}
+.btn a{
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.btn a svg{
+    margin-bottom: 5px;
+}
+    
+

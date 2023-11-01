@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Roboto&family=Roboto+Slab&display=swap');
+.navbar{
+    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 9990;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand img {
+    max-width: 125px;
+    height: auto;
+    object-fit: contain;
+    padding: 7px 0;
+}
+
+ul.navbar-nav > li > a {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+}
+.navbar-nav .nav-item{
+    padding-left: 2.5rem;
+}
+.btn {
+    background: #EC3C3F !important;
+    padding: 10px 15px !important;
+    letter-spacing: 0.06em !important;
+    border-radius: 3px !important;
+    text-align: center !important;
+    transition: all ease 0.4s !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    line-height: 18px !important;
+    text-transform: capitalize !important;
+    color: #FFFFFF !important;   
+}
+.navbar-toggler{
+    border: none; 
+    outline: none;   
+}
+
+
+
+/* mediaquery start */
+
+@media screen and (max-width:1200px) {
+    .navbar-nav .nav-item{
+        padding-left: 1.5rem;
+    }
+    ul.navbar-nav > li > a {
+        font-family: 'Mulish', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+        color: #333333;
+    }
+   
+}
+@media screen and (max-width:991px) {
+    .navbar-nav .nav-item {
+        padding-left: 1.5rem;
+        border-bottom: 1px solid #00000026;
+        padding: 10px 0;
+    }
+    .borders{
+        border-bottom: none !important;
+    }
+
+  
+
+    
+}

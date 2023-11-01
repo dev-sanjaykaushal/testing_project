@@ -1,0 +1,153 @@
+.login_wrap{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    padding: 15px 0;
+    background: #F8FAFD;
+}
+  .solution_area01{
+    padding: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;    
+    margin: 0 auto;
+    max-width: 100% !important;
+    transition: all ease 0.4s;
+    text-align: center;
+    
+  } 
+
+ .solution_area01 ul{
+    text-align: left;
+    margin: 35px 22px 40px;
+    max-width: 385px;
+ }
+ .solution_area01 figure img{
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+ }
+
+ .solution_area01 ul li{
+    list-style: none;
+    text-align: start !important;
+    background-image: url("../../img/check.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding:  0 0 0 35px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin: 0 0 30px;
+ }
+
+
+ .input_group{
+    display: flex;
+    flex-direction: row;
+    
+ }
+ .loginHead{
+    position: relative;
+ }
+
+ .loginHead h2:after {
+    margin: -12px 0;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 1.5px;
+    background: #fff;
+}
+.right_card{
+    padding-right: 0px !important;
+}
+.left_card{
+    padding-left: 0px !important;
+}
+.googleLogin p{
+    padding-top: 22px;
+}
+.googleLogin{
+    padding: 50px;
+    background: #0A1C31;
+    min-height: 100%;
+    color: #fff;
+}
+.checkRow{
+    margin: 18px 0;
+}
+.input_group input{
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 9px 8px;
+    border-radius: 5px; 
+    outline: none !important; 
+    box-shadow: none !important;  
+}
+.inputCheck{
+    margin-left: -11px;
+}
+.inputCheck input{
+    margin-right: 9px;
+    padding: 8px;
+}
+.inputCheck label{
+    font-size: 15px;
+    font-weight: 400;
+}
+.forgat a{
+    color: white !important;
+}
+.googleLogin form .btn{
+    width: 100%;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+.googleLogin form .btn:hover{
+    background-color: white !important;
+    color: red !important;
+}
+
+
+
+
+
+/* media_query start */
+
+@media screen and (max-width:999px) {
+    .right_card{
+        padding-left: 0px !important;
+    }
+    .left_card{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+@media screen and (max-width:789px) {
+    .solution_area01 ul li {        
+        padding: 0 0 0 30px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;        
+        margin: 0 0 30px;
+    }
+    .solution_area01 ul {        
+        margin: 35px 0px 40px;
+        
+    }
+    .solution_area01{
+        padding: 60px;   
+        
+      } 
+      .right_card{
+        padding-left: 0px !important;
+    }
+    
+}

@@ -1,0 +1,201 @@
+.firstpage {
+    padding: 20px 0;
+    background-image: url(../../img//banner-img.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: contain;
+    width: 100%;
+}
+
+.wow{
+    margin-top: 3.5rem;
+}
+.wow h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #0A1C31;
+    margin: 0 0 20px;
+    max-width: 490px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+.wow h1 span{
+    color: #ec3c3f;
+}
+
+.wow p {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #454545;
+    margin-bottom: 1.6rem;
+    
+}
+
+.list-icon li{
+    background: #FFFFFF;
+    box-shadow: -20px 14px 74px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    list-style: none;
+    margin: 59px 0;
+    display: flex;
+    padding:15px 20px ;
+    align-items: center;
+    max-width: 248px;
+    width: 100%;
+}
+
+.list-icon li span{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    padding-left: 20px;
+}
+figure {
+    margin: 0 0 0rem !important;
+}
+li.list2 {
+    margin-left: 3rem;
+}
+
+/* second-section start */
+
+
+.secondSection{
+    padding: 80px 0;
+}
+.heading {
+    position: relative;
+    max-width: 520px;
+    margin: 0 auto 30px;    
+    padding-bottom: 10px;
+}
+.heading h2{
+    text-align: center;    
+    font-size: 32px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #0A1C31;
+    font-family: 'Poppins', sans-serif;
+}
+
+.heading h2 span{
+    color: #ec3c3f;
+}
+.headings01:after {
+    width: 30px !important;
+    bottom: 4px !important;
+}
+.headings01:after, .headings01:before {
+    display: block;
+    content: "";
+    position: absolute;
+    background: #0A1C31;
+    bottom: 10px;
+    height: 1px;
+    width: 50px;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+}
+
+.fadeinleft h3 {
+    margin: 0 0 15px;
+    position: relative;
+    padding-bottom: 12px;
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #0A1C31;
+    font-family: 'Poppins', sans-serif;
+}
+.solutions1 {
+    padding: 40px 0;
+}
+.fadeinleft{
+    margin-top: 3rem;
+}
+.fadeinleft h3:after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 1px;
+    background: #ec3c3f;
+}
+.fadeinleft p{
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #454545;
+}
+.figure54 img {
+    display: block;
+    max-height: 245px;
+    margin: 0 auto !important;
+    max-width: 90%;
+    object-fit: contain;    
+}
+
+.solutions1 figure {
+    margin: 0 auto 0 !important;
+}
+
+ 
+
+ /* {Track report page satart} */
+
+
+/* counter part start */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query start */
+
+@media screen and (max-width:991px) {
+    .firstpage {        
+        background-image: url(../../img//banner-img.png);
+        background-position: right bottom;
+        background-size: 570px;
+       
+    }
+    .welcome{
+        margin-top: 70px;
+    }
+    .list-icon li{
+        margin: 35px 0;
+    }
+    li.list2 {
+        margin-left: 3rem !important;
+    }
+    
+     
+
+}
+

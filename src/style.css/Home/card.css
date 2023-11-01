@@ -1,0 +1,71 @@
+.solutionSection{
+    padding: 80px 0;
+    background-color: #F8FAFD;
+  }
+
+  .solution-area{
+    padding: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    max-width: 585px;
+    margin: 0 auto;
+    transition: all ease 0.4s;
+    text-align: center;
+    
+  }
+  .solution-area:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 450px rgba(0, 0, 0, 0.07);    
+}
+ .solution-area h3{
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #0A1C31;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 0.7rem;
+ }
+ .solution-area h3 span{
+    color: #ec3c3f;
+ }
+ .solution-area ul{
+    text-align: left;
+    margin: 35px 22px 40px;
+    max-width: 385px;
+ }
+ .solution-area figure{
+    max-width: 80%x;
+    margin: 0 auto 30px;
+    display: block;
+ }
+ .solution-area figure img{
+    max-width: 100%;
+    height: auto;
+ }
+
+ .solution-area ul li{
+    list-style: none;
+    text-align: start !important;
+    background-image: url("../../img/check.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding:  0 0 0 35px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #000000;
+    margin: 0 0 22px;
+ }
+
+
+
+
+/* @media query start */
+
+ @media screen and (max-width:991px) {    
+    .solution-area {        
+        margin: 1rem auto;        
+    }     
+
+}

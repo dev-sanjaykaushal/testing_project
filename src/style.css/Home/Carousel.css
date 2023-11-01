@@ -1,0 +1,92 @@
+.peopleReveiw{
+    padding: 65px 0;
+    background-color: #fff;
+}
+
+.heik{
+    position: relative;
+    padding-bottom: 15px;
+    margin: 0 0 20px;
+}
+
+/* .testimonials_wrap{
+    padding:65px 0;
+    background-color: #fff;
+}
+.testimonial_slider {
+    max-width: 922px;
+    margin: 0 auto;
+    border: 10px solid #F8FAFD;
+    padding: 55px;
+}
+.testi_author {
+    display: flex;
+    align-items: center;
+    margin: 25px 0 0;
+}
+
+.testi_author figure {
+    max-width: 65px;
+    margin: 0 15px 0 0;
+}
+.testi_author_info strong {
+    display: block;
+    font-size: 15px;
+    color: #000;
+}
+.testi_author_info {
+    font-size: 15px;
+    color: #888888;
+}
+.testi_slide p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40px;
+    color: #000000;
+    max-width: 655px;
+}
+span.quote_icon {
+    margin: 0 0 15px;
+    display: block;
+}
+.testimonial_slider ul.slick-dots {
+    left: auto;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: auto;
+    bottom: auto;
+    width: auto;
+}
+.testimonial_slider ul.slick-dots li {
+    margin: 0 0 15px;
+    display: block;
+    height: auto;
+    width: auto;
+}
+.testimonial_slider ul.slick-dots li button {
+    font-size: 0;
+    border: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background: rgba(236, 60, 63, 0.1);
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-size: 0;
+}
+.testimonial_slider ul.slick-dots li button:before{
+    display: none;
+}
+.testimonial_slider ul.slick-dots li.slick-active button {
+    background: #ec3c3f;
+}
+.testimonials_wrap .page_head.divider_red:after,.testimonials_wrap .page_head.divider_red:before {
+    background: #ec3c3f;
+}
+.testimonials_wrap .page_head {
+    padding-bottom: 15px;
+} */
