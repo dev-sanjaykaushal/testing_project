@@ -15,6 +15,7 @@ const About = () => {
       <SignupComponent/>
       <CarouselComponent/>
       <Footer/>
+      
     </>
   )
 }
