@@ -1,0 +1,101 @@
+.mainwrapper{
+    padding: 65px 0 0;
+    /* background: #EAEDF7; */
+}
+.main_box{
+    background: #EAEDF7;
+}
+.newTrip{
+    background: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgb(34 38 69 / 5%);
+    margin: 0 0 20px;
+}
+.head45 h2{
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+.contents1 h4 {
+    position: relative;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.contents1 h4:after {
+    margin: -15px 0;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 38px;
+    height: 1.5px;
+    background: red !important;    
+}
+.form_group label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+    margin: 0px 0 5px;
+    color: #0a1c31;
+}
+.input-group-text {    
+    font-size: 1.2rem !important;  
+    color: red !important;
+}
+.check{
+    margin: 20px 0;
+}
+.checkbox{
+    position: relative;
+    margin: 0 20px 5px 0!important;
+    cursor: pointer;
+}
+.checkbox span{
+    padding-left: 19px;
+    position: relative;
+    display: inline;
+    padding-top: 1px;
+}
+.cheks1{
+    display: inline !important;
+}
+.form-check-input[type=checkbox] {    
+    padding: 10px !important;
+}
+.form {   
+    box-shadow: none !important;    
+}
+.maping .iframe01{    
+    width: 100% !important;
+    height: 90% !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:991px) {
+    .maping iframe {
+        min-height: 350px;
+        margin: 0px 0 30px;
+    }  
+    .form form{
+        margin-bottom: 0px !important;
+    } 
+     
+}
+
+
+

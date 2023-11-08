@@ -1,9 +1,11 @@
 import React from 'react'
+import AddTrip from '../Component.js/AfterLogin/AddTrip'
 
 const Pricing = () => {
   return (
     <div>
-      pricing
+    <h2>Pricing</h2>
+      {/* <AddTrip/> */}
     </div>
   )
 }

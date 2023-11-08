@@ -1,0 +1,41 @@
+
+.privacy h1{
+    color: #0A1C31;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+.privacy h2{
+    font-size: 32px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #0A1C31;
+    font-family: 'Poppins', sans-serif;
+}
+.privacy p{    
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Mulish', sans-serif;
+    line-height: 20px;
+    margin-bottom: 18px;
+    color: #454545;
+}
+body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.privacy p{
+    font-family: 'Mulish', sans-serif;
+}
+.privacy{    
+    width: 100%;  
+    padding: 40px 60px;    
+    background: #c1c1c147;    
+}

@@ -1,0 +1,72 @@
+.card_blue {
+    padding: 20px;   
+    color: #fff;
+    border-radius: 4px;
+    margin: 0 0 30px;
+    position: relative;    
+}
+.bg_blue{
+    background: linear-gradient(90deg, #0162E8 0%, rgba(1, 98, 232, 0.5) 100%);
+    box-shadow: 0px 8px 20px rgb(3 99 231 / 15%);
+}
+.bg_orange{
+    background: linear-gradient(90deg, #F76A2D 0%, #EFA65F 100%);
+    box-shadow: 0px 8px 20px rgb(247 106 45 / 15%);
+}
+.bg_green{
+    background: linear-gradient(90deg, #029666 -1.73%, #48D6A8 100%);
+    box-shadow: 0px 8px 20px rgb(4 151 103 / 15%);
+}
+
+.card_header9{
+    display: flex;
+    justify-content: space-between;
+}
+.card_header9 h5 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.card_header9 a svg {
+    font-size: 21px;
+    color: white;
+}
+.card_content{
+    margin: 20px 0;
+}
+.card_content .card_icon {
+    position: absolute;
+    right: 30px;
+    font-size: 80px;
+    top: auto;
+    opacity: .5;
+    bottom: 20px;
+    line-height: 80px;
+}
+.card_content .text8 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.persentages {
+    margin-right: 10px;    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+}
+.persentages svg{
+    font-size: 17px;
+    margin-right: 4px;   
+}
+.card_footer span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    opacity: 0.8;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import "../../style.css/Login/Login.css";
 import { Link } from "react-router-dom";
+import Google from "../../img/Google__G__Logo.svg.png";
 import loginLogo from "../../img/logo.webp";
 
 const LoginComponent = () => {
@@ -56,6 +57,28 @@ const LoginComponent = () => {
                   </div>
                   <button className="btn">Login</button>
                 </form>
+                <div className="bottomLine">
+                  <span>OR</span>
+                </div>
+                <div className="signupButtons">
+                  <button className="btn">
+                    <img
+                      src={Google}
+                      alt="Google_Logo"
+                      width={22}
+                      height={22}
+                    />{" "}
+                    Sign in with google
+                  </button>
+                  <Link className="btn">No Account? Create One</Link>
+                </div>
+                <div className="provacyPage">
+                  <p>
+                    By Signing In, You Agree To Our 
+                    <Link to={"/terms"}>{"  "} Terms And Conditions</Link> And Acknowledge That You
+                    Have Read Our <Link to={"/privacy"}>{"  "} Privacy Policy.</Link>
+                  </p>
+                </div>
               </div>
             </div>
           </div>

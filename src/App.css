@@ -1,0 +1,8 @@
+.main_box {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: calc(100% - 265px);
+  max-width: calc(100% - 265px);
+  padding: 20px 30px;
+  margin-left: auto;
+}

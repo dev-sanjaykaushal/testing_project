@@ -2,7 +2,7 @@ import React from "react";
 import "../style.css/Navbar.css";
 import { NavLink } from "react-router-dom";
 import navimg from "../img/logo.webp";
-import { Link } from "react-router-dom";
+
 
 
 const Navbar = () => {
@@ -79,7 +79,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-item borders">
-                <NavLink className="nav-link btn" to={"/"}>
+                <NavLink className="nav-link btn" to={"/register"}>
                   Register Now
                 </NavLink>
               </li>          

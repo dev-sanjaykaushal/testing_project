@@ -1,13 +1,14 @@
 import React from "react";
 import logo from "../img/logo-white.webp";
 import "../style.css/footer.css";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { MdEmail } from "react-icons/md";
 import { BsTelephoneFill } from "react-icons/bs";
 import { BiLogoFacebookCircle } from "react-icons/bi";
 import { BiLogoTwitter } from "react-icons/bi";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsYoutube } from "react-icons/bs";
+import { BsArrowUpCircle } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -39,12 +40,12 @@ const Footer = () => {
                       <h4>COMPANY</h4>
                     </div>
                     <ul>
-                      <li>About Us</li>
-                      <li>Help Cneter</li>
-                      <li>Resource Hub</li>
-                      <li>Jobs</li>
-                      <li>Terms of Service</li>
-                      <li>Privacy Policy</li>
+                      <li><Link to={"/about"}>About Us</Link></li>
+                      <li><Link to={"/about"}>Help Center</Link></li>
+                      <li><Link to={"/about"}>Resource Hub</Link></li>
+                      <li><Link to={"/about"}>Jobs</Link></li>
+                      <li><Link to={"/about"}>Terms of Service</Link></li>
+                      <li><Link to={"/about"}>Privacy Policy</Link></li>
                     </ul>
                   </div>
                 </div>
@@ -54,11 +55,11 @@ const Footer = () => {
                       <h4>SOLUTION</h4>
                     </div>
                     <ul>
-                      <li>Mileage Tracking</li>
-                      <li>Team Management</li>
-                      <li>Route ATM locations</li>
-                      <li>Route Petrol pumps locations</li>
-                      <li>Calculate Trip expenses</li>
+                      <li><Link to={"/contact"}>Mileage Tracking</Link></li>
+                      <li><Link to={"/contact"}>Team Management</Link></li>
+                      <li><Link to={"/contact"}>Route ATM locations</Link></li>
+                      <li><Link to={"/contact"}>Route Petrol pumps locations</Link></li>
+                      <li><Link to={"/contact"}>Calculate Trip expenses</Link></li>
                     </ul>
                   </div>
                 </div>
@@ -107,6 +108,7 @@ const Footer = () => {
           <div className="copyright">
             <p>Copyright 2023 Vehicle Bells</p>
           </div>
+          <Link className="backToTop"><BsArrowUpCircle/></Link>
         </div>
       </div>
     </>

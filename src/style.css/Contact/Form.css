@@ -9,7 +9,9 @@
     box-shadow: 2px 2px 4px rgb(34 38 69 / 5%);
     margin: 0 0 20px;
 }
-
+.form_group{
+    margin: 0 0 20px 0px;
+}
 .name_group label {
     display: block !important;
     padding: 5px 0;
@@ -36,15 +38,31 @@
     line-height: 1.5;
     width: 100%;
 }
-.btn a{
+.btn button{
     color: white;
     font-size: 0.8rem;
     font-weight: 600;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
-.btn a svg{
+.btn button svg{
     margin-bottom: 5px;
+}
+.wrap{
+    --bs-gutter-x: 0px !important;
+}
+.wrap iframe{
+    margin-left: 25px;
+}
+.style01{
+    color: tomato;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:699px) {
+    .wrap iframe{
+        width: 80%;
+    }
 }
     
 

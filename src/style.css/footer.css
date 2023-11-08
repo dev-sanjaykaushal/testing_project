@@ -40,6 +40,13 @@
     height: 1px;
     background: #EC3C3F;
 }
+.part1 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.part1 ul li a:hover{
+    color: #EC3C3F;
+}
 .part1 ul li{
     list-style: none;
     padding: 8px 0;
@@ -98,6 +105,27 @@
     padding: 17px 0;
     margin: 20px 0 0;
     font-family: 'Mulish', sans-serif;
+}
+
+.backToTop {
+    height: 42px;
+    width: 42px;
+    display: block;     
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    z-index: 99;
+    padding: 10px 0;
+    text-align: center;
+    background: #0A1C31;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+.backToTop svg{
+    background-color: #0A1C31;
+    color: white;
+    font-size: 22px;
+    vertical-align: inherit !important;
 }
 
 

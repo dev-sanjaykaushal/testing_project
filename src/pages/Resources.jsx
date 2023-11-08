@@ -1,11 +1,13 @@
 import React from 'react'
+import AddTrip from '../Component.js/AfterLogin/AddTrip'
 
 const Resources = () => {
   return (
-    <div>
-      Resources
-    </div>
+    <>
+      <h2>Resources</h2>
+    </>
   )
 }
 
 export default Resources
+
