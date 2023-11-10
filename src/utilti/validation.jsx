@@ -1,45 +1,32 @@
 export const validateForm = (formData) => {
     const errors = {};
-  
+    console.log(errors)  
     // Validate name
-    if (formData?.name?.trim() === '') {
+    if (formData.name.trim() === '') {
       errors.name = 'Name is required *';
-    }
-    // Validate Last name
-    if (formData?.lname?.trim() === '') {
-      errors.lname = 'Last Name is required *';
-    }
-    // Validate  Company name
-    if (formData?.Cname?.trim() === '') {
-      errors.Cname = 'Company Name is required *';
-    }
-  
+    } 
     // Validate email
-    if(formData?.email?.trim() === ''){
+    if(formData.email.trim() === ''){
       errors.email = "Email is required *"
     }else if (!isValidEmail(formData.email)) {
       errors.email = 'Invalid email address *';
-    }
-    if(!isPasswordValid(formData.password)){
-      errors.password = " Minimum 8 characters and first letter is capital *"
-    }
-    
+    }    
     // Validate phone
-    if (formData?.phone?.trim() === '') {
+    if (formData.phone.trim() === '') {
       errors.phone = 'Phone number is required *';
-    }else if (!validatePhoneNumber(formData.phone)) {
-      errors.phone = 'Invalid phone number. Please enter digits only. *';
+    }
+    else if (!validatePhoneNumber(formData.phone)) {
+      errors.phone = 'Invalid phone number. Please enter digits only*';
     }else if (!validatePhoneNumbers(formData.phone)){
       errors.phone = "10-digit numeric phone number is required*"
-    }  
-    
-   
+    }   
     // Validate massage
-    if(formData?.massage?.trim() === ''){
+    if(formData.massage.trim() === ''){
       errors.massage = "Please fill the box 🥰"
-    }else if(formData?.massage?.length >=30){
+    }else if(formData.massage.length >=30){
       errors.massage = "You can not write greater than 30 words *"
-    }  
+    }
+   
     return errors;
   };
   
@@ -60,7 +47,42 @@ export const validateForm = (formData) => {
     return phonePattern.test(phone);
   };
 
-  export function isPasswordValid(password) {    
-    const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d).{8,}$/;  
-    return passwordRegex.test(password);
+ 
+
+
+  // Register form validation 
+
+  export const validateFormRegister = (RegformData) => {
+    const errors = {};
+     // Validate name
+     if (RegformData?.name?.trim() === '') {
+      errors.name = 'Name is required *';
+    }
+     // Validate Last name
+     if (RegformData?.lname?.trim() === '') {
+      errors.lname = 'Last Name is required *';
+    }
+    // Validate  Company name
+    if (RegformData?.Cname?.trim() === '') {
+      errors.Cname = 'Company Name is required *';
+    }
+      // Validate email
+      if(RegformData?.email?.trim() === ''){
+        errors.email = "Email is required *"
+      }else if (!isValidEmail(RegformData.email)) {
+        errors.email = 'Invalid email address *';
+      } 
+       // Validate password
+       if(!validatePassword(RegformData.password)){
+        errors.password = " Minimum 8 characters & at least 1 letter & 1number *"
+      }
+      return errors ;
   }
+
+  export const validatePassword = (password) => {
+    // Password validation logic
+    // Example: Password must be at least 8 characters long and contain at least one letter and one number
+    const hasCharacter = /[a-zA-Z]/.test(password);
+    const hasNumber = /\d/.test(password);
+    return password.length >= 8 && hasCharacter && hasNumber;
+  };

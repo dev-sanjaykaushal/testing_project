@@ -3,11 +3,12 @@ import "../../style.css/Login/Register.css"
 import { Link } from "react-router-dom";
 import Google from "../../img/Google__G__Logo.svg.png";
 import loginLogo from "../../img/logo.webp";
-import { validateForm } from '../../utilti/validation';
+import { validateFormRegister } from '../../utilti/validation';
+// import { validateForm } from '../../utilti/validation';
 
 
 const RegisterComponent = () => {
-  const [formData, setformData] = useState({
+  const [RegformData, setRegformData] = useState({
     name: "",
     lname:"",
     email: "",
@@ -21,32 +22,37 @@ const RegisterComponent = () => {
 
   const handleChange = (e) => {    
     const { name, value } = e.target;
-    setformData({ ...formData, [name]: value });    
+    setRegformData({ ...RegformData, [name]: value });    
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmitRigister = (e) => {
     e.preventDefault();
-    const newErrors = validateForm(formData); // Validate the form using the utility function
+    const newErrors = validateFormRegister(RegformData);
     setErrors(newErrors);
-    setIsFormValid(Object.keys(newErrors).length === 0);
-
-    if (isFormValid) {
-      console.log("Form submitted");
-
-      setformData(
-        {
-          name: "",
-          lname:"",
-          email: "",
-          Cname: "",
-          password: ""
-        }
-      )      
-      // You can send data to an API or perform any other action here
-    } else {
-      console.log("Form validation failed");
-    }
+  
+    // Use the updated value of isFormValid from setIsFormValid callback
+    setIsFormValid((prevIsFormValid) => {
+      const isValid = Object.keys(newErrors).length === 0;
+      if (isValid) {
+        console.log("Form submitted");
+  
+        setRegformData(
+          {
+            name: "",
+            lname:"",
+            email: "",
+            Cname: "",
+            password: ""
+          }
+        )
+      } else {
+        console.log("Form validation failed");
+      }
+      
+      return isValid;
+    });
   };
+
 
   return ( 
     <>
@@ -75,30 +81,30 @@ const RegisterComponent = () => {
                   <h2>Register</h2>
                 </div>
                 <p>Create Your Account</p>
-                <form action="#" onSubmit={handleSubmit}>
+                <form action="#" onSubmit={handleSubmitRigister}>
                   <div className="input_group mb-4">
                   <div className="row">
                     <div className="col-lg-6 fName">
-                    <input onChange={handleChange} type="text" placeholder="First Name" name="name" value={formData.name} />
+                    <input onChange={handleChange} type="text" placeholder="First Name" name="name" value={RegformData.name} />
                     {errors.name && <p className="style01">{errors.name}</p>}
                     </div>
                     <div className="col-lg-6 lName">
-                    <input onChange={handleChange} type="text" placeholder="Last Name" name="lname" value={formData.lname} />
+                    <input onChange={handleChange} type="text" placeholder="Last Name" name="lname" value={RegformData.lname} />
                     {errors.lname && <p className="style01">{errors.lname}</p>}
                     </div>
                   </div>            
                     
                   </div>
                   <div className="input_group mb-4">
-                    <input onChange={handleChange} type="text" placeholder="Company Name (Optional)" name="Cname" value={formData.Cname} />
+                    <input onChange={handleChange} type="text" placeholder="Company Name (Optional)" name="Cname" value={RegformData.Cname} />
                     {errors.Cname && <p className="style01">{errors.Cname}</p>}
                   </div>
                   <div className="input_group mb-4">
-                    <input onChange={handleChange} type="text" placeholder="Email" name="email" value={formData.email} />
+                    <input onChange={handleChange} type="text" placeholder="Email" name="email" value={RegformData.email} />
                     {errors.email && <p className="style01">{errors.email}</p>}
                   </div>
                   <div className="input_group mb-4">
-                    <input onChange={handleChange} type="text" name="password" placeholder="password" value={formData.password} />
+                    <input onChange={handleChange} type="password" name="password" placeholder="password" value={RegformData.password} />
                     {errors.password && <p className="style01">{errors.password}</p>}
                   </div>
                  

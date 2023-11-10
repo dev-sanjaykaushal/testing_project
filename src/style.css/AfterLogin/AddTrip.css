@@ -5,6 +5,9 @@
 .main_box{
     background: #EAEDF7;
 }
+.main_box {   
+    max-width: calc(100% - 250px) !important;    
+}
 .newTrip{
     background: #fff;
     padding: 15px;

@@ -15,6 +15,10 @@ import Sidebarcomponent from "./Component.js/AfterLogin/Sidebarcomponent.jsx";
 import './App.css'
 import AddYourVehicle from "./Component.js/AfterLogin/AddYourVehicle.jsx";
 import Dashboard from "./Component.js/AfterLogin/Dashboard.jsx";
+import VehicleList from "./Component.js/AfterLogin/VehicleList.jsx";
+import TripList from "./Component.js/AfterLogin/TripList.jsx";
+import YourExpenses from "./Component.js/AfterLogin/YourExpenses.jsx";
+import Reports from "./Component.js/AfterLogin/Reports.jsx";
 function App() {
   const [isLogin, setisLogin] = useState(true);
   return (
@@ -29,6 +33,10 @@ function App() {
       <Route path="/addtrip" element={<AddTrip />} />
       <Route path="/addvehical" element={<AddYourVehicle />} />
       <Route path="/dashbord" element={<Dashboard />} />
+      <Route path="/vehicleList" element={<VehicleList />} />
+      <Route path="/triplist" element={<TripList />} />
+      <Route path="/expenses" element={<YourExpenses />} />
+      <Route path="/reports" element={<Reports />} />
       <Route path="*" element={<NoPage />} />
       </Routes>
       </div>

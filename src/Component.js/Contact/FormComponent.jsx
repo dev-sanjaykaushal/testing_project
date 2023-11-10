@@ -9,14 +9,14 @@ const FormComponent = () => {
     name: "",
     email: "",
     phone: "",
-    massage: "",
+    massage: ""
   });
   const [errors, setErrors] = useState({});
   const [isFormValid, setIsFormValid] = useState(false);
 
   
 
-  const handleChange = (e) => {
+  const handleChangeForm = (e) => {
 
   
     const { name, value } = e.target;
@@ -25,26 +25,51 @@ const FormComponent = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newErrors = validateForm(formData); // Validate the form using the utility function
+    const newErrors = validateForm(formData);
     setErrors(newErrors);
-    setIsFormValid(Object.keys(newErrors).length === 0);
-
-    if (isFormValid) {
-      console.log("Form submitted");
-
-      setformData(
-        {
+  
+    // Use the updated value of isFormValid from setIsFormValid callback
+    setIsFormValid((prevIsFormValid) => {
+      const isValid = Object.keys(newErrors).length === 0;
+      if (isValid) {
+        console.log("Form submitted");
+  
+        setformData({
           name: "",
           email: "",
           phone: "",
           massage: ""
-        }
-      )      
-      // You can send data to an API or perform any other action here
-    } else {
-      console.log("Form validation failed");
-    }
+        });
+      } else {
+        console.log("Form validation failed");
+      }
+      
+      return isValid;
+    });
   };
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const newErrors = validateForm(formData); // Validate the form using the utility function
+  //   setErrors(newErrors);
+  //   setIsFormValid(Object.keys(newErrors).length === 0);
+
+  //   if (isFormValid) {
+  //     console.log("Form submitted");
+
+  //     setformData(
+  //       {
+  //         name: "",
+  //         email: "",
+  //         phone: "",
+  //         massage: ""
+  //       }
+  //     )      
+  //     // You can send data to an API or perform any other action here
+  //   } else {
+  //     console.log("Form validation failed");
+  //   }
+  // };
 
   return (
     <>
@@ -60,7 +85,7 @@ const FormComponent = () => {
                       <input
                         name="name"
                         value={formData.name}
-                        onChange={handleChange}
+                        onChange={handleChangeForm}
                         placeholder="Name"
                         type="text"
                       />
@@ -73,7 +98,7 @@ const FormComponent = () => {
                       <input
                         name="email"
                         value={formData.email}
-                        onChange={handleChange}
+                        onChange={handleChangeForm}
                         placeholder="Email"
                         type="text"
                       />
@@ -86,7 +111,7 @@ const FormComponent = () => {
                       <input
                         name="phone"
                         value={formData.phone}
-                        onChange={handleChange}
+                        onChange={handleChangeForm}
                         placeholder="Phone"
                         type="text"
                       />
@@ -99,7 +124,7 @@ const FormComponent = () => {
                       <input
                         name="massage"
                         value={formData.massage}
-                        onChange={handleChange}
+                        onChange={handleChangeForm}
                         placeholder="Massage"
                         type="text"
                       />

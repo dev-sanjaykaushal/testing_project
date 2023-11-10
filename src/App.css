@@ -6,3 +6,12 @@
   padding: 20px 30px;
   margin-left: auto;
 }
+body {
+  font-family: "Mulish", sans-serif; 
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}

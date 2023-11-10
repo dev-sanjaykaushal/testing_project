@@ -36,6 +36,48 @@ nav.ps-menu-root.css-vj11vy {
   /* padding-left: 0px !important; */
   color: white !important;
 }
+.css-kh81go >.ps-menu-button:hover{
+  background-color: #454545a6 !important;
+}
+.css-1g25xw3 >.ps-menu-button:hover{
+  background-color: #454545a6 !important; 
+}
+.css-1g25xw3 >.ps-menu-button{
+  color: white !important;
+}
+.css-1g25xw3:hover{
+  background-color: #454545a6 !important;  
+}
+.css-1tqrhto >.ps-menu-button:hover{
+  background-color: #454545a6 !important;
+}
+.css-1tqrhto >.ps-menu-button{
+  padding-left: 65px !important;
+}
+.css-1tqrhto >.ps-menu-button::after{
+  display: block;
+  content: "";
+  position: absolute;
+  left: 31px;
+  height: 8px;
+  width: 8px;
+  border: 2px solid rgb(246 241 241);
+  border-radius: 50px;
+  top: 22px;
+}
+.css-honxw6 {  
+  width: 8px !important;
+  height: 8px !important;  
+}
+.css-jn69v9{
+  width: 8px !important;
+  height: 8px !important;
+}
+.css-1tqrhto 
+.links_voilet{
+  position: relative;
+  /* background-color: rgba(255,255,255,.07) !important; */
+}
 .profileimg{
   justify-content: center;
 }
@@ -70,12 +112,13 @@ svg.icons89 {
   height: 23px;
 }
 span.conten {
-  font-weight: 600;  
+  font-weight: 500;  
   font-size: 14px;
+  color: white;
 }
-.css-kh81go >.ps-menu-button:hover {
+/* .css-kh81go >.ps-menu-button:hover {
   color: red !important;
-}
+} */
 
 
 /* Set scrollbar width */
@@ -103,4 +146,31 @@ span.conten {
   overflow-y: auto;
   z-index: 3;
   background-color: transparent!important;
+}
+
+
+.css-z5rm24 {
+  background: rgba(255,255,255,.07) !important;
+}
+.active-nav-link {
+  color: red !important; 
+  background-color: white !important;  
+}
+
+.rounded-icon {
+  border-radius: 50%; /* Make the icon rounded */
+  animation: rotate 2s linear infinite; /* Rotate the icon continuously */
+}
+
+aside.ps-sidebar-root.app.sidebarstyle.css-1wvake5 {
+  width: 0 !important;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

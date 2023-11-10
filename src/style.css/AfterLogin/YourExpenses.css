@@ -1,0 +1,14 @@
+.monthsSelet{    
+    width: 30% !important;
+}
+.expense h6{
+    margin-top: 1.5rem !important;
+    font-size: 15px;
+    margin-bottom: 0rem !important;
+}
+.report_item21{
+    background: #eaedf7 !important;    
+}
+.report_item21 strong{
+    color: red !important;
+}
