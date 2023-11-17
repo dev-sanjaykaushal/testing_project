@@ -96,8 +96,15 @@
     }  
     .form form{
         margin-bottom: 0px !important;
-    } 
-     
+    }      
+}
+@media screen and (max-width:599px) {
+    .main_box{
+        padding: 0px;
+    }
+    .react-datepicker__input-container input {
+        width: 90%;
+    }
 }
 
 

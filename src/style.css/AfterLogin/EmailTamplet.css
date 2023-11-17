@@ -1,0 +1,56 @@
+.css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root.Mui-active {
+    color: white !important;
+}
+thead {
+    background: #0a1c31;
+    color: white;
+}
+.css-1azl6jz-MuiTableCell-root {   
+    color: white !important;
+    padding: 7px !important;
+    text-align: left !important;
+}
+.css-10dfkli-MuiTableCell-root {   
+    color: white !important;
+}
+.css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root{
+    margin: 0 0 0 19px !important;
+
+}
+.css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root:hover {
+    color: white !important;
+}
+/* .css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root.Mui-active {
+    color: white !important;
+} */
+.css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root.Mui-active .MuiTableSortLabel-icon {   
+    color: white !important;
+}
+.css-1nf681w-MuiTableCell-root {    
+    display: none !important;   
+}
+.css-11w94w9-MuiTableCell-root {   
+    padding: 0 0 0 24px !important;    
+}
+.table_content {   
+    box-shadow: none;   
+}
+.css-1mxz8qt-MuiPaper-root {   
+    box-shadow: none !important;
+}
+.css-177gid-MuiTableCell-root {    
+    padding: 11px 16px 11px 0px !important;
+    text-align: center !important;    
+}
+
+.pen{
+    padding: 14px;
+    background-color: #0162E8;
+    border-color: #0162E8;   
+    border-radius: 5px; 
+    padding: 4px 0;
+    text-align: center;
+    min-width: 24px;
+    height: 24px;
+    color: #fff;  
+}

@@ -76,6 +76,15 @@ export const validateForm = (formData) => {
        if(!validatePassword(RegformData.password)){
         errors.password = " Minimum 8 characters & at least 1 letter & 1number *"
       }
+        // Validate phone
+    if (RegformData.phone.trim() === '') {
+      errors.phone = 'Phone number is required *';
+    }
+    else if (!validatePhoneNumber(RegformData.phone)) {
+      errors.phone = 'Invalid phone number. Please enter digits only*';
+    }else if (!validatePhoneNumbers(RegformData.phone)){
+      errors.phone = "10-digit numeric phone number is required*"
+    } 
       return errors ;
   }
 

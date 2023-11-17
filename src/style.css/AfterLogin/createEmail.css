@@ -1,0 +1,23 @@
+.formWidth{
+    width: 100% !important;
+}
+.rdw-editor-main {    
+    border: 1px solid #00000024 !important;
+    background: white !important;
+}
+.rdw-editor-wrapper {    
+    background: #fafafa !important; 
+    padding-bottom: 12px !important; 
+    border: 1px solid #00000024 !important;  
+}
+.rdw-editor-toolbar { 
+    background: #fafafa !important;   
+}
+.AddTamp{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.AddTamp a{
+    padding: 10px 15px !important;
+}

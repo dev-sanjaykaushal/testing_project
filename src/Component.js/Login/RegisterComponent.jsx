@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Google from "../../img/Google__G__Logo.svg.png";
 import loginLogo from "../../img/logo.webp";
 import { validateFormRegister } from '../../utilti/validation';
-// import { validateForm } from '../../utilti/validation';
+
 
 
 const RegisterComponent = () => {

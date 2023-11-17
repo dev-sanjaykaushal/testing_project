@@ -9,6 +9,9 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import { CgMenuRight } from 'react-icons/cg';
 // import MenuIcon from '@mui/icons-material/Menu';
+// import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 import { Link } from 'react-router-dom';
 import NotificationsIcon from '@mui/icons-material/Notifications';
@@ -16,7 +19,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 export default function MenuAppBar() {
   
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <>    <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
           <IconButton
@@ -42,8 +45,25 @@ export default function MenuAppBar() {
             </select>
           </Typography>
           <Button color="inherit"><Link><img src={navimg} alt="sideimg" width={40} height={40}/></Link></Button>
+          
+
+          {/* <Dropdown as={ButtonGroup}>
+      <Button variant="success">Split Button</Button>
+
+      <Dropdown.Toggle split variant="success" id="dropdown-split-basic" />
+
+      <Dropdown.Menu>
+        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown> */}
         </Toolbar>
       </AppBar>
     </Box>
+
+    
+    </>
+
   );
 }

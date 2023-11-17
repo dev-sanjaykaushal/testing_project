@@ -1,3 +1,8 @@
+.btn:hover,.btn:focus {
+    color: #fff;
+    background: #0A1C31 !important;
+    border-color: #0A1C31;
+}
 .head45 h2{
     margin: 0 0 20px;
 }

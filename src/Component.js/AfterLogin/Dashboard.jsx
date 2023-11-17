@@ -9,9 +9,11 @@ import { FaCarSide } from "react-icons/fa";
 import { FaMapLocationDot, FaMoneyBillTransfer } from "react-icons/fa6";
 import { BiSolidPieChartAlt2 } from "react-icons/bi";
 
+
 const Dashboard = () => {
   return (
     <>
+    
       <div className="main_box">
         <div className="mainwrapper">
           <div className="head45">
@@ -282,8 +284,7 @@ const Dashboard = () => {
                   <h6>There are no records to display</h6>
                 </div>
                 <div className="div_button">
-                  <Link className="btn mt-3"><HiPlus/> Add Trip</Link>
-                
+                  <Link className="btn mt-3" to={"/addtrip"}><HiPlus/> Add Trip</Link>                
                 </div>
               </div>
             </div>

@@ -37,7 +37,9 @@ const Sidebarcomponent = () => {
       >
         <Menu>
           <div className="imglogoside">
+          <Link >
             <img src={logo01} alt="Logo" className="imges" />
+          </Link>
           </div>
 
           <div className="profileimg d-flex ">
@@ -47,10 +49,10 @@ const Sidebarcomponent = () => {
             <div class="user_info">
               <h5>Hi, Sp</h5>
               <div className="d-flex">
-                <Link>
+                <Link to={"/editProfile"}>
                   <FaUserAlt />
                 </Link>
-                <Link>
+                <Link to={"/login"}>
                   <FaRightFromBracket />
                 </Link>
               </div>
@@ -70,7 +72,7 @@ const Sidebarcomponent = () => {
             toggled: true,
           }}
         >
-          {collapsed ? (
+          {/* {collapsed ? (
             <MenuItem
               icon={<FiChevronsRight />}
               onClick={handleCollapsedChange}
@@ -80,7 +82,7 @@ const Sidebarcomponent = () => {
               suffix={<FiChevronsLeft />}
               onClick={handleCollapsedChange}
             ></MenuItem>
-          )}
+          )} */}
           <hr />
           <MenuItem
             component={
@@ -137,15 +139,15 @@ const Sidebarcomponent = () => {
             <FaChartPie className="icons89" />{" "}
             <span className="conten">Reports</span>
           </MenuItem>
-          <MenuItem component={<NavLink to="/e-commerce" />}>
+          <MenuItem component={<NavLink to="/emailtamlets" />}>
             <MdEmail className="icons89" />{" "}
             <span className="conten">Email Templates</span>
           </MenuItem>
-          <MenuItem component={<NavLink to="/e-commerce" />}>
+          <MenuItem component={<NavLink to="/attendance" />}>
             <LuPieChart className="icons89" />{" "}
             <span className="conten">Mark Attendance</span>
           </MenuItem>
-          <MenuItem component={<NavLink to="/e-commerce" />}>
+          <MenuItem component={<NavLink to="/teamDashboard" />}>
             <RiTeamFill className="icons89" />{" "}
             <span className="conten">Team Dashboard</span>
           </MenuItem>
@@ -155,13 +157,13 @@ const Sidebarcomponent = () => {
             icon={<AiFillSetting className="icons89 rounded-icon" />}
           >
             <MenuItem
-              component={<NavLink to="/addtrip" />}
+              component={<NavLink to="/editProfile" />}
               className="links_voilet"
             >
               <span className="conten">Profile Setting</span>
             </MenuItem>
             <MenuItem
-              component={<NavLink to="/addvehical" />}
+              component={<NavLink to="/permisson" />}
               className="links_voilet"
             >
               <span className="conten">Roles & Permission</span>

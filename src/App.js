@@ -10,8 +10,6 @@ import NoPage from "./Component.js/NoPage";
 import RegisterComponent from "./Component.js/Login/RegisterComponent";
 import PrivacyPage from "./Component.js/Login/PrivacyPage";
 import AddTrip from "./Component.js/AfterLogin/AddTrip";
-import MenuAppBar from "./Component.js/AfterLogin/MenuAppBar.jsx";
-import Sidebarcomponent from "./Component.js/AfterLogin/Sidebarcomponent.jsx";
 import './App.css'
 import AddYourVehicle from "./Component.js/AfterLogin/AddYourVehicle.jsx";
 import Dashboard from "./Component.js/AfterLogin/Dashboard.jsx";
@@ -19,8 +17,20 @@ import VehicleList from "./Component.js/AfterLogin/VehicleList.jsx";
 import TripList from "./Component.js/AfterLogin/TripList.jsx";
 import YourExpenses from "./Component.js/AfterLogin/YourExpenses.jsx";
 import Reports from "./Component.js/AfterLogin/Reports.jsx";
+import EmailTamplets from "./Component.js/AfterLogin/EmailTamplets.jsx";
+import Attendance from "./Component.js/AfterLogin/Attendance.jsx";
+import ProfileSetting from "./Component.js/AfterLogin/ProfileSetting.jsx";
+import TeamDashboard from "./Component.js/AfterLogin/TeamDashboard.jsx";
+import Permissons from "./Component.js/AfterLogin/Permissons.jsx";
+import MenuAppBar from "./Component.js/AfterLogin/MenuAppBar.jsx";
+import Sidebarcomponent from "./Component.js/AfterLogin/Sidebarcomponent.jsx";
+import TeamAttendance from "./Component.js/AfterLogin/TeamAttendance.jsx";
+import CreateEmail from "./Component.js/AfterLogin/CreateEmail.jsx";
+
+
 function App() {
   const [isLogin, setisLogin] = useState(true);
+  
   return (
     <div className="App">
       <BrowserRouter>
@@ -30,16 +40,27 @@ function App() {
       <div className="main-layout-wraper">
       <Sidebarcomponent />
       <Routes>
+      <Route path="/dashbord" element={<Dashboard />} />
       <Route path="/addtrip" element={<AddTrip />} />
       <Route path="/addvehical" element={<AddYourVehicle />} />
-      <Route path="/dashbord" element={<Dashboard />} />
       <Route path="/vehicleList" element={<VehicleList />} />
       <Route path="/triplist" element={<TripList />} />
       <Route path="/expenses" element={<YourExpenses />} />
       <Route path="/reports" element={<Reports />} />
+      <Route path="/emailtamlets" element={<EmailTamplets />} />
+      <Route path="/attendance" element={<Attendance />} />
+      <Route path="/editProfile" element={<ProfileSetting />} />      
+      <Route path="/teamDashboard" element={<TeamDashboard />} />      
+      <Route path="/permisson" element={<Permissons />} /> 
+      <Route path="/login" element={<Login />} /> 
+      <Route path="/teamAttendance" element={<TeamAttendance />} /> 
+      <Route path="/createemail" element={<CreateEmail />} /> 
+      
+     
       <Route path="*" element={<NoPage />} />
       </Routes>
       </div>
+      
       </>
       :
         <Routes>

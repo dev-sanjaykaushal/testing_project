@@ -1,0 +1,20 @@
+.formSelect{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.1;
+    border-radius: 5px;
+    padding: 7px 8px !important;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.03);
+    outline: none !important;
+}
+
+textarea.form-control {
+    min-height: calc(5em + .75rem + calc(var(--bs-border-width) * 2)) !important;
+}
+.modal-dialog {
+    max-width: 51rem !important;
+    top: 70px !important;
+}

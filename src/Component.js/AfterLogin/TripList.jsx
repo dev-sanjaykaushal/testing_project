@@ -2,9 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { HiPlus } from "react-icons/hi";
 
+
 const TripList = () => {
   return (
     <>
+    
       <div className="main_box">
         <div className="mainwrapper">
           <div className="head45 ">

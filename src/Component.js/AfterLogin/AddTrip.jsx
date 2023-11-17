@@ -10,6 +10,8 @@ import { useState } from "react";
 import { Form, InputGroup } from "react-bootstrap";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+// import MenuAppBar from "./MenuAppBar";
+// import Sidebarcomponent from "./Sidebarcomponent";
 
 
 const AddTrip = () => {
@@ -52,6 +54,8 @@ const AddTrip = () => {
 
   return (
     <>
+    {/* <MenuAppBar />
+    <Sidebarcomponent /> */}
       <div className="main_box">        
           <div className="mainwrapper">
             <div className="container">

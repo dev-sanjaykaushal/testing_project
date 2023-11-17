@@ -1,0 +1,11 @@
+.inpupadd input{
+    padding: 6px 8px !IMPORTANT;
+}
+.googleLogin p {
+    padding-top: 22px;
+    font-size: 15px;
+}
+.loginHead h2{
+    font-size: 26px;    
+    font-weight: bold;
+}
