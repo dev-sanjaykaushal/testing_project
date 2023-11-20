@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FormControlLabel, Switch, styled } from "@mui/material";
 
 
-const Attendance = () => {
+const Attendance = ({collapsed}) => {
   const IOSSwitch = styled((props) => (
     <Switch
       focusVisibleClassName=".Mui-focusVisible"
@@ -63,7 +63,7 @@ const Attendance = () => {
   return (
     <>
   
-      <div className="main_box">
+      <div className={`app sidebarstyle ${collapsed ? 'maxwidth_content':'main_box'}`}>
         <div className="mainwrapper">
           <div className="head45 ">
             <h2>Mark Attendance</h2>

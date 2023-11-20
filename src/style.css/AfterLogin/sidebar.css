@@ -19,7 +19,7 @@ nav.ps-menu-root.css-vj11vy {
 }
 .imglogoside {
   padding: 10px 0px;
-  margin: 0 0 30px;
+  margin: 0 0 30px 29px;
   line-height: 1;
   min-height: 64px;
   display: flex;
@@ -27,7 +27,7 @@ nav.ps-menu-root.css-vj11vy {
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 .imglogoside img {
-  max-width: 179px;
+  max-width: 200px;
   margin: 0px auto;
   display: block; 
 }
@@ -123,12 +123,12 @@ span.conten {
 
 /* Set scrollbar width */
 ::-webkit-scrollbar {
-  width: 6px; /* Adjust the width as needed */
+  width: 4px;   
 }
 
 /* Track (the background of the scrollbar) */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Background color of the track */
+  background: #0a1c31; /* Background color of the track */
 }
 
 /* Handle (the thumb of the scrollbar) */
@@ -149,6 +149,7 @@ span.conten {
 .css-12w9als { 
   font-size: 14px;
   font-weight: 500;
+  color: white;
 }
 .css-dip3t8 {
   position: relative;
@@ -167,6 +168,10 @@ span.conten {
   background-color: white !important;  
 }
 
+.css-1wvake5:hover{
+  min-width: 250px !important;
+}
+
 .rounded-icon {
   border-radius: 50%; /* Make the icon rounded */
   animation: rotate 2s linear infinite; /* Rotate the icon continuously */
@@ -183,4 +188,23 @@ aside.ps-sidebar-root.app.sidebarstyle.css-1wvake5 {
   100% {
     transform: rotate(360deg);
   }
+}
+
+ .nav_Link_col.active {
+  background-color: white;
+  color: red !important; /* Set the background color when the link is active */
+}
+
+ul.css-ewdv3l li .nav_Link_col.active .icons89 {
+  color: red; /* Set the icon color when the link is active */
+}
+ul.css-ewdv3l li .nav_Link_col.active .side_text {
+  color: red; /* Set the icon color when the link is active */
+}
+ul.css-ewdv3l li .nav_Link_col.active .conten {
+  color: red; /* Set the icon color when the link is active */
+}
+ul.css-ewdv3l li .nav_Link_col.active:hover{
+  background-color: white !important;
+  color: red !important;
 }

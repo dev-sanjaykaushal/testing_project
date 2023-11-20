@@ -2,11 +2,11 @@ import React from 'react'
 import "../../style.css/AfterLogin/permission.css"
 
 
-const Permissons = () => {
+const Permissons = ({collapsed}) => {
   return (
     <>
      
-      <div className="main_box">
+      <div className={`app sidebarstyle ${collapsed ? 'maxwidth_content':'main_box'}`}>
         <div className="mainwrapper">          
           <div className="row">
             <div className="col-lg-12">

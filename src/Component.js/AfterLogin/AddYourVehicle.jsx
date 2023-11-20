@@ -4,11 +4,11 @@ import Form from "react-bootstrap/Form";
 import "../../style.css/AfterLogin/AddVehicle.css"
 
 
-const AddYourVehicle = () => {
+const AddYourVehicle = ({collapsed}) => {
   return (
     <>
    
-      <div className="main_box">
+      <div className={`app sidebarstyle ${collapsed ? 'maxwidth_content':'main_box'}`}>
         <div className="mainwrapper">
           <div className="head45">
             <h2>Add New Vehicle</h2>
@@ -71,7 +71,7 @@ const AddYourVehicle = () => {
                 </div>
                 <div>
                   <button className="btn" type="submit">
-                    SAVE
+                    Add Vehicle
                   </button>
                 </div>
               </form>

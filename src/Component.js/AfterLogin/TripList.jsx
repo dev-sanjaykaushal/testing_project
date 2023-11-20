@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import { HiPlus } from "react-icons/hi";
 
 
-const TripList = () => {
+const TripList = ({collapsed}) => {
   return (
     <>
     
-      <div className="main_box">
+      <div className={`app sidebarstyle ${collapsed ? 'maxwidth_content':'main_box'}`}>
         <div className="mainwrapper">
           <div className="head45 ">
             <h2>All Trips</h2>

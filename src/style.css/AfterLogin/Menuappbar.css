@@ -39,5 +39,135 @@ button, input, optgroup, select, textarea {
     color: rgb(10 28 49 / 50%);
 }
 .css-hyum1k-MuiToolbar-root {    
-    margin-left: 19% !important;
+    margin-left: 9% !important;
 }
+.css-78trlr-MuiButtonBase-root-MuiIconButton-root{
+    font-size: 2rem !important;
+}
+
+/* Your existing styles */
+
+.menu_Pimg {
+  position: relative;
+  /* display: flex;
+  align-items: center; */
+}
+
+img {
+  cursor: pointer;
+}
+
+.split-dropdown {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  color: black;
+}
+
+.split-dropdown div {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.split-dropdown div:hover {
+  background-color: #f0f0f0;
+}
+.toggle_btn58{
+  width: 40px !important;
+  height: 40px;
+  background-color: white !important;
+  border: none !important;  
+}
+.toggle_btn58:hover{
+  background-color: white !important;
+}
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn.dropdown-toggle-split:first-child, .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;  
+  margin-left: 17px !important;
+}
+.dropdown_link{  
+  padding: 5px 30px 5px 15px !important;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Mulish', sans-serif;
+}
+.dropdown_link svg{
+  margin-right: 6px;
+  font-size: 18px;
+}
+.gauge{
+  font-size: 16px !important;
+}
+.dropdown-menu.show{
+  box-shadow: 0 4px 16px rgb(0 0 0 / 14%);
+  border: none;  
+}
+.toggle_btn58:focus{
+  background: none !important;
+  border-color: white !important;
+}
+.notific108{
+  font-size: 1.2rem;
+  font-weight: bold !important;
+  padding: 5px;
+  font-family: 'Mulish', sans-serif;
+}
+.noti568{
+  padding: 5px 20px !important;
+  text-align: center;
+}
+
+@media screen and (max-width:1385px) {
+    .css-hyum1k-MuiToolbar-root{
+      margin-left: 12% !important;
+    }
+    
+  }
+@media screen and (max-width:1099px) {
+    .css-hyum1k-MuiToolbar-root{
+      margin-left: 14% !important;
+    }    
+  }
+@media screen and (max-width:999px) {
+    .css-hyum1k-MuiToolbar-root{
+      margin-left: 16% !important;
+    }    
+  }
+@media screen and (max-width:899px) {
+    .css-hyum1k-MuiToolbar-root{
+      margin-left: 17% !important;
+    }    
+  }
+@media screen and (max-width:799px) {
+    .css-hyum1k-MuiToolbar-root{
+      margin-left: 19% !important;
+    }    
+  }
+@media screen and (max-width:699px) {
+    .css-hyum1k-MuiToolbar-root{
+      margin-left: 22% !important;
+    }    
+  }
+@media screen and (max-width:599px) {
+    .css-hyum1k-MuiToolbar-root{
+      margin-left: 29% !important;
+    }    
+  }
+@media screen and (max-width:499px) {
+    .css-hyum1k-MuiToolbar-root{
+      margin-left: 32% !important;
+    }    
+  }

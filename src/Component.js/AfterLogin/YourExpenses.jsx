@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import { HiPlus } from "react-icons/hi";
 
 
-const YourExpenses = () => {
+const YourExpenses = ({collapsed}) => {
   return (
     <>
   
-      <div className="main_box">
+      <div className={`app sidebarstyle ${collapsed ? 'maxwidth_content':'main_box'}`}>
         <div className="mainwrapper">
           <div className="head45 ">
             <h2>All Expenses</h2>

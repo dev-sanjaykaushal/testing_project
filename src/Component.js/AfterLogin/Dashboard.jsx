@@ -10,11 +10,11 @@ import { FaMapLocationDot, FaMoneyBillTransfer } from "react-icons/fa6";
 import { BiSolidPieChartAlt2 } from "react-icons/bi";
 
 
-const Dashboard = () => {
+const Dashboard = ({collapsed}) => {
   return (
     <>
     
-      <div className="main_box">
+      <div className={`app sidebarstyle ${collapsed ? 'maxwidth_content':'main_box'}`}>
         <div className="mainwrapper">
           <div className="head45">
             <h2>Dashboard</h2>
@@ -240,7 +240,7 @@ const Dashboard = () => {
                 <div className="dash_icons">
                   <ul className="d-flex flex-wrap">
                     <li>
-                      <Link>
+                      <Link to={"/addvehical"}>
                         <span>
                           <FaCarSide />
                         </span>
@@ -248,7 +248,7 @@ const Dashboard = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link>
+                      <Link to={"/addtrip"}>
                         <span>
                           <FaMapLocationDot />
                         </span>
@@ -256,7 +256,7 @@ const Dashboard = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link>
+                      <Link to={"/expenses"}>
                         <span>
                           <FaMoneyBillTransfer />
                         </span>
@@ -264,7 +264,7 @@ const Dashboard = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link>
+                      <Link to={"/reports"}>
                         <span>
                           <BiSolidPieChartAlt2 />
                         </span>

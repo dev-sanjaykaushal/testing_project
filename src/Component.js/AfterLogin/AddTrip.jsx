@@ -14,7 +14,7 @@ import "react-datepicker/dist/react-datepicker.css";
 // import Sidebarcomponent from "./Sidebarcomponent";
 
 
-const AddTrip = () => {
+const AddTrip = ({collapsed}) => {
   const [startDate, setStartDate] = useState(new Date());
 
   const [formData, setformData] = useState({
@@ -56,7 +56,7 @@ const AddTrip = () => {
     <>
     {/* <MenuAppBar />
     <Sidebarcomponent /> */}
-      <div className="main_box">        
+      <div className={`app sidebarstyle ${collapsed ? 'maxwidth_content':'main_box'}`}>        
           <div className="mainwrapper">
             <div className="container">
               <div className="head45">

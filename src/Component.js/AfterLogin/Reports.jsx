@@ -6,11 +6,11 @@ import { FaFileExport } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 
-const Reports = () => {
+const Reports = ({collapsed}) => {
   return (
     <>
    
-      <div className="main_box">
+      <div className={`app sidebarstyle ${collapsed ? 'maxwidth_content':'main_box'}`}>
         <div className="mainwrapper">
           <div className="head45 ">
             <h2>Your Reports</h2>

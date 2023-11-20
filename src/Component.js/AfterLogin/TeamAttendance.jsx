@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import { HiPlus } from "react-icons/hi";
 
-const TeamAttendance = () => {
+const TeamAttendance = ({collapsed}) => {
   return (
     <>
-      <div className="main_box">
+      <div className={`app sidebarstyle ${collapsed ? 'maxwidth_content':'main_box'}`}>
         <div className="mainwrapper">
           <div className="head45 ">
             <h2>Team Attendance</h2>

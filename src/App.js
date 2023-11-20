@@ -30,31 +30,39 @@ import CreateEmail from "./Component.js/AfterLogin/CreateEmail.jsx";
 
 function App() {
   const [isLogin, setisLogin] = useState(true);
+
+  const [isSidebarCollapsed, setSidebarCollapsed] = useState(false);
+
+  const handleToggleSidebar = () => {
+    setSidebarCollapsed(!isSidebarCollapsed);
+  };
   
   return (
     <div className="App">
       <BrowserRouter>
     {isLogin ?
     <>
-      <MenuAppBar />
+    <div className={`app-container ${isSidebarCollapsed ? 'sidebar-collapsed' : ''}`}>
+      <MenuAppBar collapsed={isSidebarCollapsed} onClick={handleToggleSidebar} />      
+    </div>
       <div className="main-layout-wraper">
-      <Sidebarcomponent />
+      <Sidebarcomponent collapsed={isSidebarCollapsed}  />
       <Routes>
-      <Route path="/dashbord" element={<Dashboard />} />
-      <Route path="/addtrip" element={<AddTrip />} />
-      <Route path="/addvehical" element={<AddYourVehicle />} />
-      <Route path="/vehicleList" element={<VehicleList />} />
-      <Route path="/triplist" element={<TripList />} />
-      <Route path="/expenses" element={<YourExpenses />} />
-      <Route path="/reports" element={<Reports />} />
-      <Route path="/emailtamlets" element={<EmailTamplets />} />
-      <Route path="/attendance" element={<Attendance />} />
+      <Route path="/" element={<Dashboard collapsed={isSidebarCollapsed} />} />
+      <Route path="/addtrip" element={<AddTrip collapsed={isSidebarCollapsed}/>} />
+      <Route path="/addvehical" element={<AddYourVehicle collapsed={isSidebarCollapsed} />} />
+      <Route path="/vehicleList" element={<VehicleList collapsed={isSidebarCollapsed} />} />
+      <Route path="/triplist" element={<TripList collapsed={isSidebarCollapsed} />} />
+      <Route path="/expenses" element={<YourExpenses collapsed={isSidebarCollapsed} />} />
+      <Route path="/reports" element={<Reports collapsed={isSidebarCollapsed} />} />
+      <Route path="/emailtamlets" element={<EmailTamplets collapsed={isSidebarCollapsed} />} />
+      <Route path="/attendance" element={<Attendance collapsed={isSidebarCollapsed} />} />
       <Route path="/editProfile" element={<ProfileSetting />} />      
-      <Route path="/teamDashboard" element={<TeamDashboard />} />      
-      <Route path="/permisson" element={<Permissons />} /> 
+      <Route path="/teamDashboard" element={<TeamDashboard collapsed={isSidebarCollapsed} />} />      
+      <Route path="/permisson" element={<Permissons collapsed={isSidebarCollapsed}/>} /> 
       <Route path="/login" element={<Login />} /> 
       <Route path="/teamAttendance" element={<TeamAttendance />} /> 
-      <Route path="/createemail" element={<CreateEmail />} /> 
+      <Route path="/createemail" element={<CreateEmail collapsed={isSidebarCollapsed} />} /> 
       
      
       <Route path="*" element={<NoPage />} />
